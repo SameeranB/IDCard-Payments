@@ -6,6 +6,7 @@ class Student(models.Model):
     Registration_Number=models.CharField(max_length=9)
     RFID=models.CharField(max_length=15,primary_key=True)
     Email=models.EmailField(max_length=100)
+    Balance=models.IntegerField()
 
 
     def __str__(self):
@@ -31,11 +32,7 @@ class Cab(models.Model):
 class Cab_History(models.Model):
     Driver_ID = models.ForeignKey(Driver, on_delete=models.DO_NOTHING)
     Cab_Number=models.ForeignKey(Cab, on_delete=models.DO_NOTHING)
-
-
-class Payment_History(models.Model):
-    RFID = models.ForeignKey(Student, on_delete=models.CASCADE)
-    Payment = models.IntegerField()
+    Date = models.DateField()
 
 
 class Travel_History(models.Model):

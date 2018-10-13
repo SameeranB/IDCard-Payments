@@ -22,16 +22,14 @@ from . import views
 urlpatterns = [
     url(r'^studentvieworadd/', views.SViewOrAdd.as_view()),
     url(r'^studentmodordelete/', views.SModOrDelete.as_view()),
-    # url(r'^drivervieworadd/', views.DViewOrAdd.as_view()),
-    # url(r'^drivermodordelete/', views.DModOrDelete.as_view()),
-    # url(r'^cabvieworadd/', views.CViewOrAdd.as_view()),
-    # url(r'^cabmodordelete/', views.CModOrDelete.as_view()),
-    # url(r'^cabhisvieworadd/', views.CHViewOrAdd.as_view()),
-    # url(r'^cabhisdelete/', views.CHDelete.as_view()),
-    # url(r'^payhisvieworadd/', views.PHViewOrAdd.as_view()),
-    # url(r'^payhismodordelete/', views.PHModOrDelete.as_view()),
-    # url(r'^travhisvieworadd/', views.THViewOrAdd.as_view()),
-    # url(r'^travhismodordelete/', views.THMoodOrDelete.as_view()),
+    url(r'^drivervieworadd/', views.DViewOrAdd.as_view()),
+    url(r'^drivermodordelete/', views.DModOrDelete.as_view()),
+    url(r'^cabvieworadd/', views.CViewOrAdd.as_view()),
+    url(r'^cabmodordelete/', views.CModOrDelete.as_view()),
+    url(r'^cabhisvieworadd/', views.CHViewOrAdd.as_view()),
+    url(r'^cabhisdelete/', views.CHDelete.as_view()),
+    url(r'^travhisvieworadd/', views.THViewOrAdd.as_view()),
+    url(r'^travhisdelete/', views.THDelete.as_view()),
 
 ]
 
