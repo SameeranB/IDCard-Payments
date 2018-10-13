@@ -38,7 +38,7 @@ class Payment_History(models.Model):
     Payment = models.IntegerField()
 
 
-class ID_Scan(models.Model):
+class Travel_History(models.Model):
     RFID = models.ForeignKey(Student, on_delete=models.CASCADE)
     Driver_ID = models.ForeignKey(Driver, on_delete=models.DO_NOTHING)
     Cab_Number = models.ForeignKey(Cab, on_delete=models.DO_NOTHING)
