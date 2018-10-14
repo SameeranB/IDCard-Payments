@@ -10,7 +10,7 @@ from .models import Travel_History
 class StudentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Student
-        fields = ('Name', 'Registration_Number', 'Email', 'Balance')
+        fields = '__all__'
 
 
 

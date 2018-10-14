@@ -14,7 +14,7 @@ class Student(models.Model):
 
 class Driver(models.Model):
     Name=models.CharField(max_length=100)
-    Driver_ID=models.CharField(max_length=25, primary_key=True)
+    Driver_ID= models.CharField(max_length=25, primary_key=True)
     Work_Time=models.IntegerField()
     Start_Date=models.DateField()
 
