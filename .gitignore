@@ -1,0 +1,5 @@
+#.gitignore
+*.pyc
+/myproject/local_settings.py
+
+/myproject/tmp/
